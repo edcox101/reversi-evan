@@ -1,0 +1,8 @@
+[user]
+	name = anfieldkid101
+	email = edcox@uci.edu
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true

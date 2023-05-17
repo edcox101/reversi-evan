@@ -1,0 +1,28 @@
+{
+  "name": "anfie",
+  "version": "0.0.1",
+  "description": "This is a web version of reversi game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edcox101/reversi-evan.git"
+  },
+  "keywords": [
+    "reversi",
+    "evan",
+    "c"
+  ],
+  "author": "Evan Cox",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/edcox101/reversi-evan/issues"
+  },
+  "homepage": "https://github.com/edcox101/reversi-evan#readme",
+  "dependencies": {
+    "node-static": "^0.7.11",
+    "socket.io": "^4.6.1"
+  }
+}
