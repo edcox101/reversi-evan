@@ -684,16 +684,17 @@ function send_game_update(socket, game_id, message) {
         who_won: 'everyone'
       }
       io.in(game_id).emit('game_over', payload);
+    
+      /* Delete old games after one hour */
+      setTimeout(
+        ((id) => {
+          return (() => {
+            delete games[id];
+          });
+        })(game_id)
+        , 60 * 60 * 1000
+      );
     }
-    /* Delete old games after one hour */
-    setTimeout(
-      ((id) => {
-        return (() => {
-          delete games[id];
-        });
-      })(game_id)
-      , 60 * 60 * 1000
-    );
 
 
   });
